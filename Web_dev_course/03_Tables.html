@@ -3,28 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables</title>
+    <title>Table from MDN Docs</title>
 </head>
 <body>
     <table>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Native</th>
-<tr>
-        <td>Nethaji</td>
-        <td>n1244@gmail.com</td>
-        <td>India</td>
-</tr>
-    <tr>
-        <td>Nethaji1</td>
-        <td>n124@gmail.com</td>
-        <td>India</td>
-    </tr> 
-    <tr>
-        <td>Nethaji2</td>
-        <td>n12445@gmail.com</td>
-        <td>India</td>
-    </tr>
+        <caption>Web development course</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Person</th>
+                <th scope="col">most interest in </th>
+                <th scope="col">age</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <th scope="row">Chris</th>
+                <td>HTML tables</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th scope="row">Dennis</th>
+                <td>Web Accessablity</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <th scope="row">Sarah</th>
+                <td>Java script frame works</td>
+                <td>29</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Karen</th>
+                <td>Web Perfomance</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">
+                    Average Age
+                </th>
+                <td>33</td>
+            </tr>
+        </tfoot>
+
     </table>
 </body>
 </html>
