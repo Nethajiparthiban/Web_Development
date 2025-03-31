@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model elements</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p,ul{
+            border: 2px solid purple;
+            padding: 0.2em;
+        }
+        .block,li{
+            border: 2px solid blue;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            padding: 20px;
+            
+        }
+        .block{
+            display: block;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <h1>Display elements </h1>
+    <ol>
+        <li>Block level elements </li>
+        <li>Inline elements</li>
+    </ol>
+<h1>Block level elements</h1>
+<p>I am a paragraph. A short one.</p>
+<ul>
+  <li>Item One</li>
+  <li>Item Two</li>
+  <li>Item Three</li>
+</ul>
+<p>
+  I am another paragraph. Some of the <span class="block">words</span> have been
+  wrapped in a <span>span element</span>.
+</p>
+
+
+
+
+    
+</body>
+</html>
