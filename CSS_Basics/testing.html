@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ID Selector</title>
     <style>
-        body{
-            font-family: sans-serif;
-            background-color: #dfb0b0;
+        #heading{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e17373;
         }
         #one{
-            background-color: yellow;
-            
+            background-color: blue;
         }
-        h1#heading{
-            color: rebeccapurple;
+        #heading{
+           
+            display: flex;
+            justify-content: center;
+        }
+        #one{
+           display: flex;
+           justify-content: center;
+           font-size: larger; 
         }
     </style>
-
-
 </head>
 <body>
     <h1 id="heading">ID selector</h1>
-    <p>Warning: Using the same ID multiple times in a document may appear to work for styling purposes, but don't do this. It results in invalid code, and will cause strange behavior in many places.</p>
 <p>
   Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
   daikon amaranth tatsoi tomatillo melon azuki bean garlic.
 </p>
-<h2 id="heading">ID selector</h2>
+
 <p id="one">
   Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley
   shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra
   wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
 </p>
 
-    
 </body>
 </html>
