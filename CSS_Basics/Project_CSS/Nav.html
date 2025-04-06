@@ -63,6 +63,9 @@
         border-radius: 5px;
         cursor: pointer;
        }
+       .nav1 .login-btn:hover{
+        background: #03a93d;
+       }
     .nav2{
         border: 2px solid red;
         background-color: #198f60;
@@ -101,7 +104,54 @@
         color: black ;
         border: 1px solid white;
     }
-       
+       /* Nav3 begins */
+       .nav3{
+        background-color: #39b4cd;
+        padding: 10px;
+       }
+       .nav3 ul{
+        /* Note this UL contains all the properties so we should inject disply type here */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        /* border: 2px darkblue solid; */
+        justify-content: space-around; /*it works left to right*/
+        align-items: center;/*it works top to bottom*/
+
+       }
+       .nav3 li{
+        list-style-type: none;
+       }
+       .nav3 a{
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        display: block;
+        /* border:2px darkblue solid; */
+       }
+       .nav3 .dropdown-content{
+        display: none;/*it plays very important roll*/
+
+       }
+       .nav3 .dropdown:hover .dropdown-content{
+        display: block;
+        position: absolute;/*high important check this*/
+        background-color: #3dbada;
+        width: 150px;
+       }
+       .nav3 .login-btn{
+        background-color: #074c55;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+       }
+       .nav3 .login-btn:hover{
+        background-color: #079eb2;
+
+       }
+
+
+
     </style>
  </head>
  <body>
@@ -136,11 +186,18 @@
          <nav class="nav2">
              <ul>
                  <li><a href="#">Home</a></li>
-                 <li><a href="#">About</a></li>
-                 <li><a href="#">Our Story</a></li>
+                 <li class="dropdown">
+                    <a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Story</a>
+                        <a href="#">Team</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    </li>
                  <li><a href="#">Projects</a></li>
+                 <button class="login-btn">Login</button>
              </ul>
-             <button class="login-btn">Login</button>
+             
          </nav>
      </div>
      
