@@ -104,54 +104,46 @@
         color: black ;
         border: 1px solid white;
     }
-       /* Nav3 begins */
-       .nav3{
-        background-color: #39b4cd;
+    
+    .nav3{
+        border: 2px orange solid;
+        background-color: #5cc33a;
+        /* margin: 0; */
         padding: 10px;
-       }
-       .nav3 ul{
-        /* Note this UL contains all the properties so we should inject disply type here */
+    }
+    .nav3 ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         padding: 0;
         margin: 0;
-        display: flex;
-        /* border: 2px darkblue solid; */
-        justify-content: space-around; /*it works left to right*/
-        align-items: center;/*it works top to bottom*/
-
-       }
-       .nav3 li{
-        list-style-type: none;
-       }
-       .nav3 a{
+    }
+    .nav3 a{
         text-decoration: none;
-        color: #fff;
+        color: aqua;
         padding: 10px;
         display: block;
-        /* border:2px darkblue solid; */
-       }
-       .nav3 .dropdown-content{
-        display: none;/*it plays very important roll*/
-
-       }
-       .nav3 .dropdown:hover .dropdown-content{
+        background-color: #05301a;
+    }
+    .nav3 li{
+        list-style-type: none;
+        display: inline;
+    }
+    .nav3 .dropdown-content{
+        display: none;
+    }
+    .nav3 .dropdown:hover .dropdown-content{
         display: block;
-        position: absolute;/*high important check this*/
-        background-color: #3dbada;
-        width: 150px;
-       }
-       .nav3 .login-btn{
-        background-color: #074c55;
-        color: #fff;
-        border-radius: 5px;
+        position: absolute;
+        min-width: 150px;
+    }
+    .nav3 .login-btn{
+        background-color: #042e15;
+        color: aqua;
+        border-radius: 3px;
         cursor: pointer;
-       }
-       .nav3 .login-btn:hover{
-        background-color: #079eb2;
-
-       }
-
-
-
+        padding: 8px;
+    }
     </style>
  </head>
  <body>
@@ -168,6 +160,7 @@
              
          </nav>
      </div>
+
      <div class="nav-container">
          <h2>Variation 2: Vertical with hover effect</h2>
          <nav class="nav2">
@@ -180,27 +173,22 @@
          </nav>
      </div>
      <div class="nav-container">
-         <h2>Variation 3: Horizontal with dropdown</h2>
-         <nav class="nav3 >
-         <h2>Variation 3: Horizontal hover effect</h2>
-         <nav class="nav2">
-             <ul>
-                 <li><a href="#">Home</a></li>
-                 <li class="dropdown">
+        <h2>Horizontal with dropdown</h2>
+        <nav class="nav3">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
                     <a href="#">About</a>
                     <div class="dropdown-content">
-                        <a href="#">Our Story</a>
-                        <a href="#">Team</a>
+                        <a href="#">Our Stroy</a>
+                        <a href="#">Our Team</a>
                         <a href="#">Contact</a>
-                    </div>
-                    </li>
-                 <li><a href="#">Projects</a></li>
-                 <button class="login-btn">Login</button>
-             </ul>
-             
-         </nav>
-     </div>
-     
+                    </div></li>
+                    <li><a href="#">Projects</a></li>
+                    <button class="login-btn">Login</button>
+                </ul>
+            </nav>
+        </div>
  
  </body>
  </html>
